@@ -1,0 +1,2617 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 19. Other Sections
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 19. Other Sections (Author CSS End)
+===================================================*/
+
+.appointment1 {
+    position: relative;
+    z-index: 500;
+    margin-top: -68px;
+
+    @include desktop3 {
+        display: none;
+    }
+
+    &__wrapper {
+        box-shadow: 0px 20px 27px 0px rgba(238, 238, 238, 0.47);
+        position: relative;
+        background-color: #fff;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 2px;
+            background-color: $primary_color_01;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding: 40px 0px 75px 40px;
+
+        &--thumb {
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            height: 60px;
+            width: 60px;
+            border-radius: 100px;
+            text-align: center;
+            line-height: 57px;
+            border: 1px dashed #bababa;
+            background-color: #fff;
+            z-index: 300;
+        }
+
+        &--content {
+            padding-left: 80px;
+
+            h4 {
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 18px;
+                color: $heading_color_02;
+                text-transform: uppercase;
+                margin: 5px 0px 0px 0px;
+            }
+
+            input {
+                border: none;
+                color: #bababa;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 500;
+                margin-top: 12px;
+
+                &::placeholder {
+                    color: #999;
+                    font-size: 14px;
+                    line-height: 18px;
+                    font-weight: 500;
+                }
+            }
+
+            .nice-select {
+                padding: 0px;
+                border: none;
+                font-size: 14px;
+                color: #999;
+                font-weight: 500;
+
+                &::after {
+                    border: none;
+                    content: '\f078';
+                    @include font_awesome;
+                    transform: rotate(0deg);
+                    top: 5px;
+                    right: 0px;
+                    color: #999;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &.item-01 {
+
+            .nice-select {
+
+                &::after {
+                    right: -15px;
+                }
+            }
+        }
+    }
+
+    &__btn {
+        position: relative;
+        width: 100%;
+
+        a {
+            position: absolute;
+            // z-index: 200;
+            top: 40px;
+            right: 40px;
+        }
+
+        &::before {
+            width: 100%;
+            height: 138px;
+            background: #FFD9DB;
+            border-radius: 100px 0px 0px 100px;
+            // z-index: 100;
+            position: absolute;
+            content: '';
+        }
+    }
+}
+
+.home1 {
+
+    &.conference {
+
+        @include phone2_middle {
+            display: none;
+        }
+    }
+
+    .appointment1__wrapper::before {
+        height: 1px;
+    }
+
+    .appointment1__btn::before {
+        display: none;
+    }
+
+    .appointment1__item--thumb {
+        border-radius: 0px;
+        border: 1px solid #ECECEC;
+    }
+
+    .appointment1__item.input1 {
+        padding: 40px 0px 45px 40px;
+
+        @include desktop3 {
+            padding: 0px 0px 0px 40px;
+
+            .appointment1__item--thumb {
+                top: 0px;
+            }
+        }
+    }
+
+    .appointment1__btn {
+
+        @include desktop3 {
+            min-height: 140px;
+            margin-top: 10px;
+
+            a {
+                right: auto;
+                left: 120px;
+            }
+        }
+
+        .appointment1__item--thumb {
+            background-color: #FFD9DB;
+            border: none;
+            left: 0px;
+
+            @include desktop3 {
+                left: 40px;
+            }
+        }
+    }
+
+    .appointment1__item.item-01 .nice-select::after {
+        right: 50px;
+    }
+}
+
+// Appointment 2
+
+.appointment2 {
+    background: url(../img/background/bg-05.jpg);
+    @include bg_fixed;
+
+    &__item {
+        position: relative;
+        background: #E8E8E8;
+        width: 100%;
+        padding: 26px;
+        border-radius: 72px;
+
+        @include phone2_middle {
+            padding: 0px;
+        }
+
+        &:hover .appointment2__thumb {
+            background: $primary_color_01;
+            border-color: #fff;
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+
+    &__thumb-wrapper {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background: #fff;
+        text-align: center;
+        line-height: 100px;
+        padding-left: 20px;
+        padding-top: 20px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+
+        @include phone2_middle {
+            width: 80px;
+            height: 80px;
+            top: 4px;
+            left: 5px;
+            background: $primary_color_01;
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+    }
+
+    &__thumb {
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        border: 1px dashed #bababa;
+        text-align: center;
+        line-height: 74px;
+        transition: 0.3s;
+
+        @include phone2_middle {
+            border-color: #fff;
+        }
+
+        i {
+            transition: 0.3s;
+
+            @include phone2_middle {
+                color: #fff;
+            }
+
+            &::before {
+                font-size: 30px;
+            }
+        }
+    }
+
+    &__content {
+        background: #fff;
+        padding-left: 95px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+        border-radius: 72px;
+
+        h4 {
+            font-size: 16px;
+            font-weight: 500;
+            color: $heading_color_02;
+            line-height: 18px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 500;
+            color: #797979;
+        }
+    }
+}
+
+// Appointment 3
+
+.appointment3 {
+    overflow: hidden;
+    position: relative;
+    height: 758px;
+
+    @include desktop3 {
+        height: auto;
+    }
+
+    &__thumb {
+        position: absolute;
+        background: url(../img/background/bg-12.jpg);
+        height: 100%;
+        width: calc(50% - 73px);
+        left: calc(50% + 73px);
+        @include bg_fixed;
+
+        @include desktop3 {
+            display: none;
+        }
+    }
+
+    &__thumb2 {
+        position: absolute;
+        background: url(../img/png-img/png-img-14.png);
+        height: 100%;
+        width: calc(50% + 73px);
+        left: 0px;
+        @include bg_fixed;
+
+        @include desktop3 {
+            width: 100%;
+        }
+    }
+
+    .form-control {
+        border: none;
+        font-size: 16px;
+        border-radius: 5px;
+
+        &::placeholder {
+            color: #818181;
+            text-transform: capitalize;
+            font-size: 16px;
+        }
+    }
+}
+
+// Appointment 4
+
+.appointment4 {
+    padding-bottom: 62px;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: url(../img/png-img/png-img-21.png);
+        @include bg_fixed;
+        z-index: -500;
+        content: '';
+
+        @include desktop3 {
+            display: none;
+        }
+    }
+
+    &::before {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: #f1f1f1;
+        content: '';
+        z-index: -1000;
+    }
+
+    &__item {
+        background: #f9f9f9;
+        padding: 30px 0px;
+        box-shadow: 0px 12px 24.3px 2.7px rgba(228, 226, 226, 0.78);
+
+        h5 {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 600;
+            color: $heading_color_02;
+            margin-top: 20px;
+        }
+
+        &:hover {
+
+            h5 a {
+                color: $primary_color_01;
+            }
+
+            .appointment4__thumb {
+                border-color: $primary_color_01;
+                background: $primary_color_01;
+
+                i {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    &__thumb-wrapper {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 100px;
+        box-shadow: 0px 12px 24.3px 2.7px rgba(228, 226, 226, 0.78);
+        padding: 20px;
+        margin: 0px auto;
+    }
+
+    &__thumb {
+        width: 60px;
+        height: 60px;
+        border: 1px solid #bababa;
+        border-radius: 100%;
+        text-align: center;
+        line-height: 72px;
+        background: #fff;
+        transition: 0.4s;
+
+        i {
+            color: $primary_color_01;
+            transition: 0.3s;
+
+            &::before {
+                font-size: 25px;
+            }
+        }
+    }
+
+    &__content {
+        margin-top: 20px;
+
+        h3 {
+            font-size: 36px;
+            line-height: 48px;
+            font-weight: bold;
+
+            span {
+                color: $primary_color_01;
+            }
+
+            @include laptop1 {
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+
+        ul {
+            margin-top: 31px;
+
+            @include laptop1 {
+                margin-top: 20px;
+            }
+
+            li {
+                display: inline-block;
+
+                a {
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 30px;
+                    color: $heading_color_02;
+
+                    @include laptop1 {
+                        font-size: 18px;
+                        line-height: 28px;
+                    }
+
+                    &:hover {
+                        color: $primary_color_01;
+                    }
+
+                    span {
+                        color: $primary_color_01;
+                        margin: 0px 15px;
+
+                        @include laptop1 {
+                            margin: 0px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Care
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.care1 {
+    position: relative;
+    overflow: hidden;
+
+    &__thumb1 {
+        background: url(../img/about/about-04.jpg);
+        @include bg_fixed;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
+        @include laptop1 {
+            display: none;
+        }
+    }
+
+    &__thumb2 {
+        background: url(../img/about/about-05.jpg);
+        @include bg_fixed;
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+
+        @include laptop1 {
+            width: 100%;
+        }
+    }
+
+    &__thumb3 {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 1px dashed #ff4555;
+        margin: 0px auto;
+        background-color: #fff;
+        position: relative;
+        line-height: 70px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 9px;
+            top: 9px;
+            width: 50px;
+            height: 50px;
+            background-color: #E12454;
+            z-index: 0;
+            border-radius: 100%;
+        }
+
+        span {
+            position: absolute;
+            right: 15px;
+            top: 1px;
+            height: 5px;
+            width: 5px;
+            background-color: #ff4555;
+            z-index: 50;
+            content: '';
+            border-radius: 100%;
+
+            &::before {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background-color: #ff4555;
+                content: '';
+                left: -51px;
+                top: 35px;
+                border-radius: 100%;
+            }
+
+            &::after {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: #ff4555;
+                content: '';
+                left: -38px;
+                top: 57px;
+                border-radius: 100%;
+            }
+        }
+
+        img {
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    &__content {
+
+        h4 {
+            font-size: 24px;
+            line-height: 24px;
+            color: $heading_color_02;
+            font-weight: 400;
+            margin-bottom: 32px;
+
+            @include laptop1 {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            @include phone2 {
+                font-size: 18px;
+            }
+        }
+
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 65px;
+            color: $heading_color_01;
+            margin-bottom: 45px;
+
+            @include laptop1 {
+                font-size: 45px;
+                line-height: 50px;
+                margin-bottom: 35px;
+            }
+
+            @include phone2 {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+.care2 {
+    position: relative;
+    background: url(../img/png-img/png-img-09.png);
+    @include bg_fixed;
+    overflow: hidden;
+
+    &__thumb1 {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        border: 1px dashed #ff4555;
+        margin: 0px auto;
+        background-color: #fff;
+        position: relative;
+        line-height: 70px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 9px;
+            top: 9px;
+            width: 50px;
+            height: 50px;
+            background-color: #E12454;
+            z-index: 0;
+            border-radius: 100%;
+        }
+
+        span {
+            position: absolute;
+            right: 15px;
+            top: 1px;
+            height: 5px;
+            width: 5px;
+            background-color: #ff4555;
+            z-index: 50;
+            content: '';
+            border-radius: 100%;
+
+            &::before {
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                background-color: #ff4555;
+                content: '';
+                left: -51px;
+                top: 35px;
+                border-radius: 100%;
+            }
+
+            &::after {
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: #ff4555;
+                content: '';
+                left: -38px;
+                top: 57px;
+                border-radius: 100%;
+            }
+        }
+
+        img {
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    &__content {
+
+        h4 {
+            font-size: 24px;
+            line-height: 24px;
+            color: $heading_color_02;
+            font-weight: 400;
+            margin-bottom: 32px;
+
+            @include laptop1 {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            @include phone2 {
+                font-size: 18px;
+            }
+        }
+
+        h2 {
+            font-size: 60px;
+            font-weight: 700;
+            line-height: 65px;
+            color: $heading_color_01;
+            margin-bottom: 45px;
+
+            @include laptop1 {
+                font-size: 45px;
+                line-height: 50px;
+                margin-bottom: 35px;
+            }
+
+            @include phone2 {
+                font-size: 32px;
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Working Process
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.working_process1 {
+    position: relative;
+
+    &__thumb1 {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        left: 0px;
+        top: 315px;
+        z-index: -5;
+    }
+
+    &__thumb2 {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        z-index: -5;
+    }
+
+    &__item {
+
+        &:hover {
+
+            .working_process1__thumb::before {
+                background-color: $primary_color_01;
+            }
+        }
+    }
+
+    &__thumb {
+        padding: 15px;
+        border: 1px dashed #e3e3e3;
+        border-radius: 100%;
+        background-color: #fff;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: #FFEDF0;
+            top: 10px;
+            left: 0px;
+            border-radius: 100%;
+            z-index: -1;
+            transition: 0.3s;
+        }
+
+        img {
+            border: 1px solid #e3e3e3;
+            border-radius: 100%;
+        }
+    }
+
+    &__content {
+        padding: 0px 20px;
+
+        @include tab1 {
+            padding: 0px 0px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 600;
+            color: $heading_color_02;
+            margin-bottom: 19px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+
+    &__bottom-text {
+        background-color: #fff;
+        box-shadow: 0px 12px 24.3px 2.7px rgba(238, 238, 238, 0.78);
+        border: 1px solid rgb(255, 237, 240);
+        padding: 30px 100px;
+
+        @include desktop3 {
+            padding: 30px 60px;
+        }
+
+        @include tab1 {
+            padding: 30px 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+
+            a {
+                color: $primary_color_01;
+
+                &:hover {
+                    color: darken($primary_color_01, 5%);
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Gallery
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.gallery1 {
+    background: url(../img/png-img/png-img-06.png);
+    @include bg_fixed;
+
+    .title2 {
+
+        h4 {
+            color: #eaeaea;
+        }
+
+        h2 {
+            color: #eaeaea;
+        }
+
+        p {
+            color: #eaeaea;
+        }
+    }
+
+    &__item {
+        border-radius: 5px;
+        overflow: hidden;
+        position: relative;
+
+        a {
+            position: absolute;
+            font-size: 30px;
+            color: #fff;
+            bottom: 40%;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            width: 100px;
+            height: 100px;
+            border: 1px dashed #fff;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 100px;
+            opacity: 0;
+            visibility: visible;
+        }
+
+        &:hover .gallery1__thumb::before {
+            opacity: 1;
+        }
+
+        &:hover a {
+            bottom: 50%;
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__thumb {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            height: 100%;
+            background: rgba($primary_color_01, 0.85);
+            transition: 0.4s;
+            opacity: 0;
+        }
+    }
+
+    &__bottom {
+
+        p {
+            color: #eaeaea;
+            font-weight: 500;
+            line-height: 30px;
+            margin-top: 40px;
+            margin-bottom: 0px;
+
+            a {
+                color: $primary_color_01;
+            }
+        }
+    }
+}
+
+// Owl carousel section dots 
+.slider-section-dots {
+    position: relative;
+
+    .owl-dots {
+        position: absolute;
+        bottom: -26px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .owl-dots .owl-dot.active span,
+    .owl-dots .owl-dot:hover span {
+        // Active dot and hover dot color
+        background: $primary_color_01;
+        border: 1px solid $primary_color_01;
+    }
+
+
+    .owl-dots .owl-dot span {
+        width: 10px;
+        height: 10px;
+        border-radius: 100px;
+        // Dots border color
+        border: 1px dashed $primary_color_01;
+        // Dots background color
+        background: transparent;
+        margin: 0px 3px;
+    }
+}
+
+.gallery2 {
+    background: url(../img/png-img/png-img-26.png);
+    @include bg_fixed;
+
+    &__content {
+        padding-right: 50px;
+
+        @include desktop3 {
+            padding-right: 0px;
+        }
+
+        @include laptop1 {
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: bold;
+            margin-bottom: 30px;
+
+            @include phone2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+
+            span {
+                color: $primary_color_01;
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 46px;
+
+                @include phone2 {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+            }
+        }
+
+        &>span {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 600;
+            color: $heading_color_01;
+            margin-bottom: 7px;
+            display: block;
+        }
+    }
+
+    &__thumb {
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+
+        &>img {
+            width: 100%;
+        }
+
+        .about3__video--thumb-wrapper {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Counter
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.counter1 {
+
+    &__bg-01 {
+        background: url(../img/png-img/png-img-07.png);
+        @include bg_fixed;
+    }
+
+    &__bg-02 {
+        background: url(../img/png-img/png-img-33.png);
+        @include bg_fixed;
+    }
+
+    &__item {
+
+        &:hover {
+
+            .counter1__thumb {
+                border-color: $primary_color_01;
+            }
+
+            .counter1__thumb i {
+                color: #fff;
+            }
+
+            .counter1__thumb::before {
+                background: $primary_color_01;
+            }
+        }
+    }
+
+    &__thumb {
+        width: 124px;
+        height: 124px;
+        border: 1px dashed #3d8080;
+        margin: 0 auto;
+        border-radius: 100%;
+        position: relative;
+        padding-top: 20px;
+        margin-bottom: 24px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 10px;
+            top: 10px;
+            width: 103px;
+            height: 103px;
+            background: #fff;
+            z-index: 10;
+            border-radius: 100%;
+            transition: 0.3s;
+        }
+
+        i {
+            color: #000;
+            position: absolute;
+            z-index: 20;
+            @include middle;
+            transition: 0.3s;
+
+            &::before {
+                font-size: 55px;
+            }
+        }
+    }
+
+    &__content {
+
+        h3 {
+            font-size: 36px;
+            line-height: 36px;
+            font-weight: 600;
+            color: $heading_color_01;
+            margin-bottom: 14px;
+            position: relative;
+            display: inline-block;
+
+            &::before {
+                position: absolute;
+                content: '+';
+                color: $heading_color_01;
+                font-size: 36px;
+                top: 0px;
+                right: -25px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 18px;
+            font-weight: 600;
+            color: $heading_color_02;
+        }
+    }
+}
+
+.counter2 {
+    background: url(../img/png-img/png-img-15.png);
+    @include bg_fixed;
+
+    &__item {
+        padding: 0px 50px 34px;
+        position: relative;
+
+        @include desktop3 {
+            padding: 0px 0px 34px;
+        }
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: 0px;
+            width: 115px;
+            height: 3px;
+            background: $primary_color_01;
+            transform: translateX(-50%);
+        }
+
+        h3 {
+            color: $primary_color_01;
+            font-size: 72px;
+            line-height: 72px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| CTA
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.cta1 {
+    background: $primary_color_01;
+    padding: 33px 50px;
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 26px;
+
+        a {
+            color: $heading_color_02;
+        }
+    }
+}
+
+.cta2 {
+    background: url(../img/png-img/png-img-18.png);
+    @include bg_fixed;
+
+    &__padding {
+        padding: 60px 0px;
+
+        p {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 34px;
+            color: #fff;
+
+            @include desktop3 {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            @include laptop1 {
+                font-size: 16px;
+                line-height: 26px;
+            }
+
+            @include tab1 {
+                line-height: 26px;
+            }
+
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+.cta3 {
+    background: url(../img/background/bg-16.jpg);
+    @include bg_fixed;
+
+    &__content {
+
+        h3 {
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 30px;
+
+            @include tab1 {
+                font-size: 30px;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 28px;
+            color: #fff;
+            font-weight: bold;
+            margin-bottom: 40px;
+
+            @include tab1 {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    a {
+        background: #DFF3FD;
+        color: $primary_color_01;
+        padding: 18px 85px 18px 35px;
+
+        i {
+            background: $primary_color_01;
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+            color: #fff;
+        }
+
+        &:hover {
+            background: $primary_color_01;
+            color: #fff;
+
+            i {
+                background: #ffd9db;
+                color: $primary_color_01;
+            }
+        }
+    }
+}
+
+.cta4 {
+    background: url(../img/png-img/png-img-28.png);
+    @include bg_fixed;
+
+    .title2 {
+
+        p {
+            color: $heading_color_01;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Pricing
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.pricing1 {
+    background: url(../img/png-img/png-img-10.png);
+    @include bg_fixed;
+
+    &__row {
+        box-shadow: 0px 12px 24.3px 2.7px rgba(238, 238, 238, 0.78);
+        border: 1px solid #FFEDF0;
+        margin-top: 110px;
+        margin-bottom: 50px;
+
+        @include laptop1 {
+            margin-bottom: 0px;
+            margin-top: 64px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__thumb--style {
+        position: absolute;
+        z-index: 40;
+        width: 124px;
+        height: 124px;
+        border: 1px dashed #b7b7b7;
+        top: -150px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100%;
+        background: #fff;
+
+        &::before {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            content: '';
+            border: 1px dashed #b7b7b7;
+            top: 11px;
+            left: 11px;
+            border-radius: 100%;
+            background: #fff;
+        }
+    }
+
+    &__thumb {
+        box-shadow: 0px 0px 24.3px 2.7px rgba(238, 238, 238, 0.78);
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        line-height: 60px;
+        position: relative;
+        z-index: 50;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #fff;
+    }
+
+    &__content {
+        padding: 0px 50px 50px;
+
+        @include desktop3_4 {
+            padding: 0px 30px 50px;
+        }
+
+        @include phone2_middle {
+            padding: 0px 20px 50px;
+        }
+
+        &>h4 {
+            font-size: 30px;
+            line-height: 36px;
+            color: $secondary_color_01;
+            font-weight: 500;
+        }
+
+        &>p {
+            color: #bababa;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 500;
+        }
+
+        &>h3 {
+            border-top: 2px solid #E0E0E0;
+            border-left: 2px solid #E0E0E0;
+            border-right: 2px solid #E0E0E0;
+            margin-top: 20px;
+            color: $heading_color_02;
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            padding-top: 10px;
+        }
+
+        &>ul {
+            text-align: left;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            li {
+                border-bottom: 1px solid #E0E0E0;
+                padding-bottom: 8px;
+                margin-bottom: 14px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    &__middle {
+        position: relative;
+        z-index: 100;
+
+        @include laptop1 {
+            margin-top: 210px;
+            margin-bottom: 175px;
+        }
+
+        &::before {
+            position: absolute;
+            width: 100%;
+            height: 755px;
+            content: '';
+            box-shadow: 0px 12px 24.3px 2.7px rgba(238, 238, 238, 0.78);
+            border: 1px solid #FFEDF0;
+            background: #fff;
+            z-index: 5;
+            top: -200px;
+        }
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 44px;
+            content: '';
+            background: #FFBED3;
+            z-index: 6;
+            left: 0px;
+            top: -108px;
+        }
+
+        .pricing1__thumb {
+            box-shadow: none;
+            background: #fff;
+        }
+
+        .pricing1__thumb--style::before {
+            background: #FFBED3;
+            border: none;
+        }
+    }
+}
+
+.pricing2 {
+    background: url(../img/png-img/png-img-27.png);
+    @include bg_fixed;
+
+    &.other_page {
+        background: #F9F9F9;
+    }
+
+    &__item {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 12px;
+    }
+
+    &__thumb {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__data1 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background: rgba(#fff, 0.6);
+        border-radius: 50px;
+
+        span {
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 600;
+            color: #3d8080;
+            display: inline-block;
+            padding: 6px 20px;
+        }
+
+        &--box {
+            background: rgba(#fff, 0.6);
+            position: relative;
+            height: 100%;
+            width: 100%;
+            border-radius: 50px;
+            margin-left: 5px;
+        }
+    }
+
+    &__data2 {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background: rgba(#f43b4b, 0.7);
+        border-radius: 50px;
+
+        span {
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 500;
+            color: #fff;
+            display: inline-block;
+            padding: 6px 20px;
+        }
+
+        &--box {
+            background: rgba(#f43b4b, 0.7);
+            position: relative;
+            height: 100%;
+            width: 100%;
+            border-radius: 50px;
+            margin-left: 5px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding: 12px 0px 8px;
+
+        h4 {
+
+            a {
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: bold;
+                color: $heading_color_01;
+                margin-left: 15px;
+                margin-top: 14px;
+                display: inline-block;
+
+                @include desktop3_4 {
+                    font-size: 18px;
+                }
+
+                @include phone2_middle {
+                    font-size: 18px;
+                    margin-left: 0px;
+                }
+
+                &:hover {
+                    color: $primary_color_01;
+                }
+            }
+        }
+
+        &>a {
+            width: 55px;
+            height: 55px;
+            display: inline-block;
+            border-radius: 100%;
+            background: #DEDEDE;
+            line-height: 57px;
+            text-align: center;
+            color: #3d8080;
+            font-size: 16px;
+            position: absolute;
+            right: 5px;
+            top: 15px;
+
+            &:hover {
+                background: $primary_color_01;
+                color: #fff;
+            }
+        }
+    }
+
+
+    // Owl carousel customization
+    .owl-item img {
+        display: inline-block;
+        width: auto;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        height: 60px;
+        width: 60px;
+        background: #fff;
+        color: $heading_color_01;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: -90px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20px;
+        border-radius: 50%;
+        transition: .3s;
+
+        &:hover {
+            background: $primary_color_01;
+            color: #fff;
+        }
+
+        @include desktop2 {
+            display: none;
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        left: auto;
+        right: -90px;
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Client
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.client1 {
+
+    &__thumb {
+        opacity: 0.5;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &.home2 {
+        border-bottom: 1px solid #e2e5e7;
+    }
+
+    &.home2 {
+        background: url(../img/png-img/png-img-20.png);
+        @include bg_fixed;
+    }
+
+    &.home3 {
+        background: #FCFCFC;
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Contact
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+
+.contact1 {
+    background: url(../img/png-img/png-img-12.png);
+    @include bg_fixed;
+
+    &__info {
+        border: 1px solid #4a495a;
+        padding: 75px 50px 68px;
+
+        @include phone2 {
+            padding: 50px 30px;
+        }
+
+        @include phone2_middle {
+            padding: 50px 20px;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 34px;
+        }
+
+        h4 {
+            color: $primary_color_01;
+            font-weight: 600;
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+
+        p {
+            color: #768495;
+            line-height: 30px;
+        }
+    }
+
+    &__thumb-wrapper {
+        width: 124px;
+        height: 124px;
+        margin: 0px auto 30px;
+        border: 1px dashed #b7b7b7;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__thumb {
+        border: 1px dashed #b7b7b7;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+
+        img {
+            margin-top: 20px;
+        }
+    }
+}
+
+.contact2 {
+    position: relative;
+    background: #243338;
+    height: 775px;
+    overflow: hidden;
+
+    @include desktop2 {
+        height: 740px;
+    }
+
+    @include laptop1 {
+        height: auto;
+        padding: 80px;
+    }
+
+    @include tab2 {
+        padding: 80px 20px;
+    }
+
+    &__thumb {
+        background: url(../img/background/bg-15.jpg);
+        @include bg_fixed;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 100%;
+        width: 65%;
+
+        @include desktop1_middle {
+            width: 60%;
+        }
+
+        @include desktop2 {
+            display: none;
+        }
+
+        a.contact2__logo {
+            display: inline-block;
+            margin-bottom: 32px;
+        }
+
+        &--content {
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            width: 734px;
+            height: 440px;
+            background: #fff;
+            padding: 75px 60px;
+
+            @include laptop1 {
+                position: relative;
+            }
+
+            h4 {
+                font-size: 36px;
+                line-height: 48px;
+                font-weight: 600;
+            }
+        }
+
+        a.btn9 {
+            position: absolute;
+            bottom: 0px;
+            border-radius: 0px;
+            left: 0px;
+        }
+    }
+
+    &__wrapper {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+        width: 35%;
+
+        @include desktop1_middle {
+            width: 40%;
+        }
+
+        @include desktop2 {
+            position: static;
+            width: 100%;
+        }
+    }
+
+    &__content {
+        width: 470px;
+        border-top: 5px solid $primary_color_01;
+        border-left: 5px solid $primary_color_01;
+        border-right: 1px solid #4A495A;
+        border-bottom: 1px solid #4A495A;
+        padding: 75px 60px 70px;
+
+        @include desktop2 {
+            width: 600px;
+        }
+
+        @include phone1 {
+            padding: 55px 20px 50px;
+        }
+
+        @include phone2 {
+            padding: 50px 20px;
+        }
+
+        h3 {
+            font-size: 36px;
+            color: #fff;
+            font-weight: 600;
+            line-height: 1;
+            margin-bottom: 35px;
+
+            @include phone2 {
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+        }
+
+        h4 {
+            font-size: 36px;
+            line-height: 1;
+            color: #f43b4b;
+            font-weight: 600;
+            margin-bottom: 23px;
+
+            @include phone2 {
+                font-size: 24px;
+            }
+        }
+
+        p {
+            color: #7a8a9e;
+            font-size: 16px;
+            line-height: 30px;
+        }
+
+        &--thumb-box {
+            width: 124px;
+            height: 124px;
+            line-height: 124px;
+            border: 1px dashed #b7b7b7;
+            margin: 0px auto;
+            border-radius: 100%;
+            margin-bottom: 36px;
+        }
+
+        &--thumb {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            border: 1px dashed #b7b7b7;
+            border-radius: 100%;
+            line-height: 100px;
+            margin: 0px auto;
+        }
+    }
+}
+
+// Contact Page
+.contact_page2__form {
+    background: #296363;
+    padding: 65px 80px 0px;
+    border-radius: 0px 20px 20px 0px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    @include desktop3 {
+        padding: 50px 40px 0px;
+    }
+
+    @include laptop1 {
+        padding: 50px 40px 40px;
+        border-radius: 0px;
+    }
+
+    @include phone2_middle {
+        padding: 50px 20px 40px;
+    }
+
+    &::before {
+        position: absolute;
+        content: '';
+        right: 0px;
+        bottom: 0px;
+        height: 0px;
+        width: 0px;
+        border-bottom: 120px solid $primary_color_01;
+        border-left: 120px solid transparent;
+    }
+
+    &>h3 {
+        color: #fff;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 52px;
+
+        @include desktop3 {
+            margin-bottom: 30px;
+        }
+    }
+
+    form {
+
+        .form-control {
+            background: #243338;
+            border: none;
+            border-radius: 30px;
+            padding: 30px;
+            margin-bottom: 30px;
+            font-size: 16px;
+            color: rgba(#fff, 0.8);
+
+            &::placeholder {
+                color: #909090;
+                text-transform: capitalize;
+                font-size: 16px;
+            }
+        }
+
+        .btn8 {
+            box-shadow: 0px 3px 20px 0px rgba(238, 238, 238, 0.5);
+            background: #f1f1f1;
+
+            &:hover {
+                background: $primary_color_01;
+                color: #fff;
+                border-color: $primary_color_01;
+                box-shadow: 0px 3px 20px 0px rgba($primary_color_01, 0.5);
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| History
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.history1 {
+    background: url(../img/png-img/png-img-13.png);
+    @include bg_fixed;
+
+    @include desktop3 {
+        padding: 60px 0px;
+        background: none;
+    }
+
+    &__left {
+        border-top: 3px solid $primary_color_01;
+        background: #fff;
+        padding: 25px 30px 12px;
+        box-shadow: 0px 3px 7px 0px rgba(244, 244, 244, 0.88);
+        position: relative;
+        top: -75px;
+        z-index: 1000;
+
+        @include desktop3 {
+            top: 0px;
+            margin-bottom: 40px;
+        }
+
+        @include tab1 {
+            padding: 25px 30px 30px;
+        }
+
+        @include phone2_middle {
+            padding: 25px 20px;
+        }
+
+        &--content {
+            height: 100%;
+
+            h3 {
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 24px;
+                margin-bottom: 23px;
+
+                @include phone2_middle {
+                    font-size: 20px;
+                }
+            }
+
+            ul {
+
+                @include tab1 {
+                    margin-bottom: 40px;
+                }
+
+                li {
+                    border-bottom: 1px solid #ebf5f5;
+                    padding-bottom: 11px;
+                    margin-bottom: 16px;
+
+                    span {
+
+                        @include phone2_middle {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--thumb {
+            background: url(../img/about/about-06.jpg);
+            @include bg_fixed;
+            height: 140px;
+            position: relative;
+
+            a {
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 52px;
+                color: $primary_color_01;
+                border-radius: 100%;
+                background: #fff;
+                position: absolute;
+                animation: radial_pulse1 2.5s infinite;
+
+                @include middle;
+            }
+        }
+    }
+
+    &__right {
+        border-top: 3px solid $primary_color_01;
+        background: #fff;
+        padding: 25px 30px 28px;
+        box-shadow: 0px 3px 7px 0px rgba(244, 244, 244, 0.88);
+        position: relative;
+        top: -75px;
+        z-index: 1000;
+
+        @include desktop3 {
+            top: 0px;
+        }
+
+        @include phone2_middle {
+            padding: 25px 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 25px;
+            font-weight: 600;
+            margin-bottom: 15px;
+
+            @include phone2_middle {
+                font-size: 20px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            color: #768495;
+            margin-bottom: 17px;
+
+            @include phone2_middle {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Faq
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+// Accordion Style
+.accordion_style_01 {
+
+    .card {
+        border: none;
+        margin-bottom: 22px;
+        border-radius: 0px;
+    }
+
+    .card-header {
+        padding: 0px;
+        border: none;
+        background-color: #fff;
+
+        h5 {
+            margin-bottom: 1px;
+        }
+    }
+
+    .card-header a {
+        display: block;
+        padding: 13px 42px 12px 20px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 600;
+        color: $heading_color_01;
+        border: none;
+        background: #fff;
+        position: relative;
+        transition: all 0.3s;
+        cursor: pointer;
+
+        span {
+            color: $primary_color_01;
+            margin-right: 8px;
+        }
+
+        &:hover {
+            border-color: $primary_color_01;
+        }
+
+        i {
+            position: absolute;
+            right: 20px;
+            top: 14px;
+            color: $heading_color_01;
+            transition: 0.3s;
+        }
+
+        &:hover i {
+            color: $primary_color_01;
+        }
+    }
+
+    .card-header a[aria-expanded="true"] {
+        border-color: $primary_color_01;
+
+        i {
+            color: $primary_color_01;
+            transform: rotate(-180deg);
+        }
+    }
+
+    // .card-header a::after,
+    // .card-header a[aria-expanded="false"]::after {}
+    // .card-header a[aria-expanded="true"]::after {}
+
+    .card-body {
+        padding: 0px 50px 20px 20px;
+        margin-top: 1px;
+
+        @include phone1 {
+            padding: 0px 20px 20px 20px;
+        }
+
+        p {
+            margin: 0px;
+        }
+    }
+}
+
+.faq1 {
+    position: relative;
+    overflow: hidden;
+    height: 720px;
+
+    @include desktop3 {
+        height: auto;
+    }
+
+    &__thumb1 {
+        background: url(../img/background/bg-13.jpg);
+        @include bg_fixed;
+        height: 100%;
+        width: calc(48% + 7px);
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
+        @include desktop3 {
+            display: none;
+        }
+    }
+
+    &__thumb2 {
+        background: url(../img/png-img/png-img-16.png);
+        @include bg_fixed;
+        height: 100%;
+        width: calc(52% - 7px);
+        position: absolute;
+        top: 0px;
+        right: 0px;
+
+        @include desktop3 {
+            width: 100%;
+        }
+    }
+
+    &__thumb3 {
+        background: url(../img/png-img/png-img-17.png);
+        @include bg_fixed;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        z-index: 100;
+        padding: 45px 48px 50px;
+
+        @include desktop3 {
+            display: none;
+        }
+
+        h3 {
+            color: #fff;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+
+        a {
+            border: 1px solid #fff;
+        }
+    }
+
+    &__wrapper {
+
+        h3 {
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: bold;
+            margin-bottom: 42px;
+        }
+    }
+}
+
+.faq2 {
+    background: url(../img/png-img/png-img-29.png);
+    @include bg_fixed;
+
+    &__item {
+        position: relative;
+    }
+
+    &__thumb {
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        background: $primary_color_01;
+        text-align: center;
+        line-height: 32px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
+        i {
+            color: #fff;
+        }
+    }
+
+    &__content {
+        padding-left: 40px;
+        padding-right: 50px;
+
+        h5 {
+            font-size: 16px;
+            line-height: 30px;
+            font-weight: 600;
+            margin-bottom: 13px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+            color: #768495;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Why Choose Us
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.why_choose_us1 {
+    background: #223645;
+
+    .title2 {
+
+        h2 {
+            color: #fff;
+        }
+    }
+
+    &__item {
+        border: 1px solid $primary_color_01;
+        border-radius: 5px;
+        padding: 23px 10px 28px;
+    }
+
+    &__thumb {
+        text-align: center;
+        margin-bottom: 6px;
+
+        i {
+
+            &::before {
+                font-size: 60px;
+                color: $primary_color_01;
+            }
+        }
+    }
+
+    &__content {
+
+        h4 {
+            color: #fff;
+            font-size: 20px;
+            line-height: 30px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Info
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.info1 {
+
+    &__item {
+
+        &:hover {
+
+            .info1__icon-box {
+                background: $primary_color_01;
+            }
+        }
+    }
+
+    &__thumb {
+        border: 10px solid #F1F1F1;
+        margin-bottom: 21px;
+    }
+
+    &__content {
+        position: relative;
+        padding-bottom: 8px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 300px;
+            height: 1px;
+            background: #E5E5E5;
+            left: 50%;
+            top: 105px;
+            transform: translateX(-50%);
+            z-index: -5;
+
+            @include laptop1 {
+                width: 260px;
+            }
+
+            @include phone2_middle {
+                width: 220px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 80px;
+            height: 1px;
+            background: #E5E5E5;
+            left: 50%;
+            bottom: 0px;
+            transform: translateX(-50%);
+            z-index: -5;
+        }
+
+        h4 {
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 600;
+            color: $heading_color_01;
+            margin-bottom: 22px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__icon-box {
+        width: 91px;
+        height: 91px;
+        border: 1px dashed #d0f6ff;
+        border-radius: 100%;
+        padding: 12px;
+        margin: 0px auto 25px;
+        background: #fff;
+        transition: 0.3s;
+    }
+
+    &__icon {
+        width: 65px;
+        height: 65px;
+        border: 1px solid #F1F1F1;
+        border-radius: 100%;
+        background: #fff;
+        transition: 0.3s;
+
+        i {
+
+            &::before {
+                font-size: 40px;
+                color: $primary_color_01;
+            }
+        }
+    }
+}
+
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Contact page
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.contact_page1 {
+
+    &__title {
+
+        h2 {
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: 600;
+            color: $heading_color_01;
+
+            @include phone2 {
+                font-size: 26px;
+                line-height: 36px;
+            }
+        }
+    }
+
+    &__left {
+        box-shadow: 0px 10px 35px 0px rgba(244, 244, 244, 0.8);
+        background: #fff;
+
+        &--heading {
+            background: $primary_color_01;
+            padding: 26px 30px 20px;
+
+            @include phone3 {
+                padding: 26px 25px 20px;
+            }
+
+            h4 {
+                color: #fff;
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+
+                @include phone2 {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        p {
+            padding: 35px 30px;
+
+            @include phone3 {
+                padding: 30px 25px;
+            }
+        }
+    }
+
+    &__form {
+
+        .form-control {
+            background: #F1F1F1;
+            border: none;
+            font-size: 16px;
+            line-height: 26px;
+            color: $heading_color_01;
+
+            &::placeholder {
+                color: $heading_color_01;
+                font-size: 16px;
+                line-height: 26px;
+                text-transform: inherit;
+            }
+        }
+
+        button.btn9 {
+            border-radius: 0px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Pagination
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.pagination {
+
+    ul {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+
+            a {
+                font-size: 16px;
+                font-weight: bold;
+                color: $font_color_01;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                border: 1px solid #EBEBEB;
+                text-align: center;
+                line-height: 40px;
+                border-radius: 100px;
+                margin: 0px 4px;
+
+                @include phone2 {
+                    margin: 0px 4px 8px;
+                }
+
+                &:hover {
+                    color: #fff;
+                    border-color: $primary_color_01;
+                    background: $primary_color_01;
+                }
+            }
+
+            &.active {
+
+                a {
+                    background: $primary_color_01;
+                    border-color: $primary_color_01;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

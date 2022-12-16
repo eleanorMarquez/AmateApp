@@ -1,0 +1,153 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 10. Footer
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 10. Footer
+===================================================*/
+
+.footer1 {
+    background: #0E3340;
+
+    &__top {
+        border-top: 1px solid #4B575B;
+        border-bottom: 1px solid #3D5B65;
+    }
+
+    &__item {
+
+        h3 {
+            font-size: 24px;
+            line-height: 1;
+            font-weight: 600;
+            color: #ebebeb;
+            margin-bottom: 53px;
+        }
+
+        &--02 {
+            padding-left: 35px;
+
+            @include desktop3 {
+                padding-left: 0px;
+            }
+        }
+
+        &--03 {
+            padding-left: 10px;
+
+            @include desktop3 {
+                padding-left: 0px;
+            }
+        }
+
+        &--logo {
+            margin-bottom: 45px;
+        }
+
+        ul {
+
+            li {
+
+                @include not_last_child {
+                    margin-bottom: 12px;
+                }
+
+                span {
+                    font-size: 17px;
+                    color: #c8c8c8;
+                    line-height: 1;
+                }
+
+                a {
+                    font-size: 17px;
+                    color: #c8c8c8;
+                    line-height: 1;
+                    display: inline-block;
+
+                    &:hover {
+                        color: $primary_color_01;
+                    }
+                }
+            }
+        }
+
+        &--email {
+            position: relative;
+            margin-top: 40px;
+
+            input {
+                background: #1e4d70;
+                width: 100%;
+                border: none;
+                padding: 15px 50px 16px 20px;
+
+                &::placeholder {
+                    color: #508ea3;
+                    font-style: italic;
+                }
+            }
+
+            button {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                background: $primary_color_01;
+                color: #fff;
+                border: none;
+                font-size: 26px;
+                display: inline-block;
+                padding: 8px 14px;
+            }
+        }
+
+        &--instagram {
+
+            a {
+                display: inline-block;
+                width: 75px;
+                height: 75px;
+                margin-right: 10px;
+                margin-bottom: 13px;
+            }
+        }
+    }
+
+    &__bottom {
+        padding: 30px 0px 30px;
+    }
+
+    &__social {
+
+        a {
+            display: inline-block;
+            font-size: 21px;
+            color: #4c6d78;
+
+            @include not_last_child {
+                margin-right: 20px;
+            }
+
+            @include laptop1 {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__copyright {
+
+        p {
+            color: #c7c7c7;
+            font-size: 18px;
+
+            @include laptop1 {
+                font-size: 15px;
+            }
+
+            a {
+                color: $primary_color_01;
+            }
+        }
+    }
+}

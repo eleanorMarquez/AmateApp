@@ -1,0 +1,461 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 07. Button
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 07. Button
+===================================================*/
+.main_btn {
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.60, 0, 0.70, 1);
+    display: inline-block;
+
+    a,
+    button {
+        text-transform: capitalize;
+        color: #fff;
+        font-size: 14px;
+        position: relative;
+        display: inline-block;
+        padding: 18px 40px;
+        @include btn-font-weight;
+        z-index: 20;
+    }
+
+    button {
+        background: transparent;
+        border: none;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        height: 100%;
+        background: $primary_color_01;
+        width: 100%;
+        z-index: 10;
+    }
+
+    &::before {
+        z-index: 15;
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 0;
+        background: darken($primary_color_01, 5%);
+        transition: all 0.5s cubic-bezier(0.60, 0, 0.70, 1);
+    }
+
+    &:hover {
+        color: #fff;
+
+        &::before {
+            left: 0;
+            right: auto;
+            width: 100%;
+        }
+    }
+}
+
+// <div class="main_btn">
+//     <a href="#">Love you</a>
+// </div>
+
+
+////////////////////////////////////////////////////
+// btn1
+.btn1 {
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 19px 42px;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: 0.3s;
+    color: #fff;
+    background: $primary_color_01;
+    // box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 8px 0 rgba(0, 0, 0, 0.10);
+    border: none;
+    font-family: $font-primary;
+    @include btn-font-weight;
+}
+
+.btn1:hover,
+.btn1:focus {
+    background: $tertiary_color_01;
+    color: #fff;
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.14), 0 4px 14px 0 rgba(0, 0, 0, 0.10);
+}
+
+.btn1:focus,
+.btn1.focus {
+    outline: 0;
+}
+
+////////////////////////////////////////////////////
+// btn2
+.btn2 {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 15px 35px;
+    font-size: 16px;
+    border-radius: 100px;
+    transition: 0.3s;
+    color: #fff;
+    background: $primary_color_01;
+    border: none;
+    font-family: $font-primary;
+    @include btn-font-weight;
+    letter-spacing: 0.25px;
+}
+
+.btn2:hover,
+.btn2:focus {
+    background: $tertiary_color_01;
+    color: #fff;
+}
+
+.btn2:focus,
+.btn2.focus {
+    outline: 0;
+}
+
+////////////////////////////////////////////////////
+// btn3
+
+.btn3 {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 20px 85px 20px 35px;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 100px;
+    transition: 0.3s;
+    color: #fff;
+    background: $primary_color_01;
+    border: none;
+    font-family: $font-primary;
+    @include btn-font-weight;
+    letter-spacing: 0.25px;
+    position: relative;
+
+    &>span {
+
+        span {
+
+            @include phone2_middle {
+                display: none;
+            }
+        }
+    }
+
+    i {
+        height: 54px;
+        width: 54px;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        line-height: 54px;
+        border-radius: 100px;
+        background-color: #FFD9DB;
+        color: $primary_color_01;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        transition: 0.3s;
+    }
+}
+
+.btn3:hover,
+.btn3:focus {
+    background: $tertiary_color_01;
+    color: #fff;
+
+    i {
+        background-color: $primary_color_01;
+        color: #fff;
+    }
+}
+
+.btn3:focus,
+.btn3.focus {
+    outline: 0;
+}
+
+////////////////////////////////////////////////////
+// btn4
+
+.btn4 {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 10px 45px 10px 10px;
+    font-size: 16px;
+    line-height: 18px;
+    transition: 0.3s;
+    color: #292929;
+    border: none;
+    font-family: $font-primary;
+    @include btn-font-weight;
+    letter-spacing: 0.25px;
+    position: relative;
+
+    i {
+        display: inline-block;
+        font-size: 30px;
+        color: $primary_color_01;
+        position: absolute;
+        right: 0px;
+        top: 3px;
+        transition: 0.3s;
+    }
+}
+
+.btn4:hover,
+.btn4:focus {
+    color: $primary_color_01;
+}
+
+.btn4:focus,
+.btn4.focus {
+    outline: 0;
+}
+
+////////////////////////////////////////////////////
+// btn5
+
+.btn5 {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    font-size: 16px;
+    line-height: 18px;
+    transition: 0.3s;
+    color: #292929;
+    border: none;
+    font-family: $font-primary;
+    @include btn-font-weight;
+    letter-spacing: 0.25px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 1px;
+        background-color: #292929;
+        content: '';
+        left: 0px;
+        bottom: 8px;
+        transition: 0.3s;
+    }
+}
+
+.btn5:hover,
+.btn5:focus {
+    color: $primary_color_01;
+
+    &::before {
+        background-color: $primary_color_01;
+    }
+}
+
+.btn5:focus,
+.btn5.focus {
+    outline: 0;
+}
+
+////////////////////////////////////////////////////
+// btn6
+
+.btn6 {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 20px 85px 20px 35px;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 100px;
+    transition: 0.3s;
+    color: $primary_color_01;
+    background: #fff;
+    border: 1px solid $primary_color_01;
+    font-family: $font-primary;
+    @include btn-font-weight;
+    letter-spacing: 0.25px;
+    position: relative;
+
+    @include phone2_middle  {
+        font-size: 14px;
+        padding: 18px 80px 18px 30px;
+    }
+
+    i {
+        height: 54px;
+        width: 54px;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        line-height: 54px;
+        border-radius: 100px;
+        background-color: #FFD9DB;
+        color: $primary_color_01;
+        position: absolute;
+        right: 2px;
+        top: 2px;
+        transition: 0.3s;
+
+        @include phone2_middle {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}
+
+.btn6:hover,
+.btn6:focus {
+    background: $primary_color_01;
+    border: 1px solid $primary_color_01;
+    color: #fff;
+
+    i {
+        background-color: #FFD9DB;
+        color: $primary_color_01;
+    }
+}
+
+.btn6:focus,
+.btn6.focus {
+    outline: 0;
+}
+
+////////////////////////////////////////////////////
+// btn7
+
+.btn7 {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 20px 85px 20px 35px;
+    font-size: 16px;
+    line-height: 18px;
+    border-radius: 100px;
+    transition: 0.3s;
+    color: $primary_color_01;
+    background: transparent;
+    border: 1px dashed #eaeaea;
+    font-family: $font-primary;
+    @include btn-font-weight;
+    letter-spacing: 0.25px;
+    position: relative;
+
+    @include phone2_middle  {
+        font-size: 14px;
+        padding: 18px 80px 18px 30px;
+    }
+
+    i {
+        height: 58px;
+        width: 58px;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        line-height: 58px;
+        border-radius: 100px;
+        background-color: transparent;
+        border: 1px dashed #eaeaea;
+        color: $primary_color_01;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        transition: 0.3s;
+
+        @include phone2_middle {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}
+
+.btn7:hover,
+.btn7:focus {
+    background: $primary_color_01;
+    border: 1px solid $primary_color_01;
+    color: #fff;
+
+    i {
+        background-color: #FFD9DB;
+        color: $primary_color_01;
+    }
+}
+
+.btn7:focus,
+.btn7.focus {
+    outline: 0;
+}
+
+////////////////////////////////////////////////////
+// btn8
+
+.btn8 {
+    display: inline-block;
+    text-transform: capitalize;
+    padding: 15px 40px;
+    font-size: 16px;
+    border-radius: 100px;
+    transition: 0.3s;
+    color: $primary_color_01;
+    background: #fff;
+    font-family: $font-primary;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    box-shadow: 0px 8px 29px 0px rgba(238, 238, 238, 0.88);
+    border: 1px solid #ECECEC;
+}
+
+.btn8:hover,
+.btn8:focus {
+    background: $tertiary_color_01;
+    color: #fff;
+    border: 1px solid $tertiary_color_01;
+}
+
+.btn8:focus,
+.btn8.focus {
+    outline: 0;
+}
+
+////////////////////////////////////////////////////
+// btn9
+
+.btn9 {
+    display: block;
+    text-transform: capitalize;
+    padding: 15px 0px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: 0.3s;
+    color: #fff;
+    background: $primary_color_01;
+    font-family: $font-primary;
+    font-weight: 600;
+    letter-spacing: 0.25px;
+    border: none;
+    width: 100%;
+}
+
+.btn9:hover,
+.btn9:focus {
+    background: $tertiary_color_01;
+    color: #fff;
+    border: none;
+}
+
+.btn9:focus,
+.btn9.focus {
+    outline: 0;
+}

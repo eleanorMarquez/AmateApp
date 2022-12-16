@@ -1,0 +1,132 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 06. Input
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 06. Input
+===================================================*/
+
+////////////////////////////////////////////////////
+// Form Control
+.form-control {
+    border: 1px solid #e2e5e7;
+    margin-bottom: 20px;
+    padding: 28px 20px;
+    border-radius: 0px;
+    outline: 0 none;
+    font-size: 12px;
+    font-family: $font-primary;
+
+    &:focus {
+        border-color: rgba($primary_color_01, 0.7);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: 0 none;
+        color: $font_color_01;
+    }
+
+    &::placeholder {
+        color: #999;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    &:-ms-input-placeholder {
+        /* Internet Explorer 10-11 */
+        color: #999;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    &::-webkit-input-placeholder {
+        /* Edge */
+        color: #999;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+}
+
+
+////////////////////////////////////////////////////
+// Input Number
+.quantity {
+    position: relative;
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type=number] {
+        -moz-appearance: textfield;
+    }
+
+    input {
+        width: 80px;
+        height: 42px;
+        line-height: 1.65;
+        float: left;
+        display: block;
+        padding: 0;
+        margin: 0;
+        padding-left: 20px;
+        border: 1px solid #ddd;
+    }
+
+    input:focus {
+        outline: 0;
+    }
+
+    .quantity-nav {
+        float: left;
+        position: relative;
+        height: 42px;
+    }
+
+    .quantity-button {
+        position: relative;
+        cursor: pointer;
+        border-left: 1px solid #ddd;
+        width: 20px;
+        text-align: center;
+        color: #3e3e3e;
+        font-size: 10px;
+        font-family: "Trebuchet MS", Helvetica, sans-serif !important;
+        line-height: 2.2;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+    }
+
+    .quantity-button.quantity-up {
+        position: absolute;
+        height: 50%;
+        top: 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .quantity-button.quantity-down {
+        position: absolute;
+        bottom: 0px;
+        height: 50%;
+    }
+}
+
+// <div class="quantity">
+//   <input type="number" min="1" max="100" step="1" value="1">
+// </div>
+
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Site Input
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|

@@ -1,0 +1,624 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 12. Service and Feature
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 12. Service and Feature
+===================================================*/
+
+.service1 {
+    background: url(../img/png-img/png-img-01.png);
+    @include bg_fixed;
+
+    &__item {
+        background-color: #fff;
+        position: relative;
+        box-shadow: 0px 0px 24.3px 2.7px rgba(238, 238, 238, 0.004);
+        padding: 40px 40px 45px 40px;
+
+        @include desktop3_4 {
+            padding: 40px 20px 45px 20px;
+        }
+
+        @include phone2_middle {
+            padding: 40px 20px 45px 20px;
+        }
+
+        &:hover {
+
+            .btn6 {
+                background: $primary_color_01;
+                border: 1px solid $primary_color_01;
+                color: #fff;
+            }
+
+            .service1__star {
+
+                i {
+                    color: #fff;
+                }
+
+                &::before {
+                    border-top-color: $primary_color_01;
+                }
+            }
+        }
+    }
+
+    &__star {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0px;
+            top: 0px;
+            width: 0;
+            height: 0;
+            border-top: 59px solid #FFD9DB;
+            border-right: 55px solid transparent;
+            z-index: 0;
+            transition: 0.3s;
+        }
+
+        i {
+            z-index: 5;
+            position: relative;
+            top: 5px;
+            left: 8px;
+            color: $primary_color_01;
+            transition: 0.3s;
+        }
+    }
+
+    &__thumb {
+        position: relative;
+        width: 70px;
+        height: 70px;
+        margin: 0 auto 50px;
+
+        &::before {
+            position: absolute;
+            content: url(../img/png-img/png-img-02.png);
+            z-index: 5;
+            left: 50%;
+            transform: translateX(-40px);
+        }
+
+        img {
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    &__content {
+        position: relative;
+        padding-top: 40px;
+        padding-bottom: 9px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            left: 50%;
+            top: 0px;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 80px;
+            background: $primary_color_01;
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: 0px;
+            transform: translateX(-50%);
+            height: 1px;
+            width: 80px;
+            background: $primary_color_01;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: $heading_color_01;
+            line-height: 30px;
+            letter-spacing: 0.25px;
+            text-transform: capitalize;
+            font-weight: 600;
+            margin-bottom: 21px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            color: #768495;
+        }
+    }
+
+    &__bottom-text {
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            color: #768495;
+            margin: 0px;
+
+            a {
+                color: $primary_color_01;
+
+                &:hover {
+                    color: darken($primary_color_01, 5%);
+                }
+            }
+        }
+    }
+
+    // Owl carousel customization
+    .owl-item img {
+        display: inline-block;
+        width: auto;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        height: 60px;
+        width: 60px;
+        background: #fff;
+        color: $heading_color_01;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: -90px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20px;
+        border-radius: 50%;
+        transition: .3s;
+
+        &:hover {
+            background: $primary_color_01;
+            color: #fff;
+        }
+
+        @include desktop2 {
+            display: none;
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        left: auto;
+        right: -90px;
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Service 02
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.service2 {
+    background: #EBF5F5;
+
+    &__item {
+        padding: 50px 40px 45px;
+        background: #fff;
+
+        @include desktop3_4 {
+            padding: 50px 20px 45px;
+        }
+
+        @include phone2_middle {
+            padding: 50px 20px 45px;
+        }
+
+        &:hover .service2__thumb {
+            background: $primary_color_01;
+            box-shadow: 0px 15px 24px 0px rgba(225, 36, 84, 0.23);
+
+            i {
+                color: #fff;
+            }
+        }
+    }
+
+    &__thumb {
+        background: #ffd9db;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        margin: 0px auto 22px;
+        line-height: 90px;
+        transition: 0.3s;
+        padding-top: 12px;
+
+        i {
+            color: $primary_color_01;
+
+            &::before {
+                font-size: 45px;
+            }
+        }
+    }
+
+    &__content {
+
+        h3 {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 600;
+            position: relative;
+            margin-bottom: 48px;
+
+            &::before {
+                position: absolute;
+                width: 80px;
+                height: 1px;
+                background: #ffd9db;
+                content: '';
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -25px;
+            }
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+
+        a {
+            font-size: 16px;
+            line-height: 18px;
+            font-weight: 500;
+            color: $primary_color_01;
+            display: inline-block;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 1px;
+                background: $primary_color_01;
+                bottom: -5px;
+            }
+        }
+    }
+
+    // Owl carousel section dots 
+    .slider-section-dots {
+        position: relative;
+
+        .owl-dots {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            margin-bottom: -5px;
+            transition: 0.3s;
+        }
+
+        .owl-dots .owl-dot.active span,
+        .owl-dots .owl-dot:hover span {
+            // Active dot and hover dot color
+            background: $primary_color_01;
+
+        }
+
+        .owl-dots .owl-dot span {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            // Dots border color
+            border: none;
+            // Dots background color
+            background: #d9dbde;
+            margin: 0px 5px;
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Service 03
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.service3 {
+    background: url(../img/png-img/png-img-25.png);
+    @include bg_fixed;
+
+    &.other_page {
+        background: #fff;
+
+        .service3__item {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.24);
+        }
+    }
+
+    &__item {
+        background: #fff;
+        border-radius: 5px 5px 0px 0px;
+        overflow: hidden;
+
+        &:hover {
+
+            .service3__thumb {
+
+                a {
+                    top: 50%;
+                    opacity: 1;
+                    visibility: visible;
+                }
+
+                &::before {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+
+            .service3__content {
+                border-color: #fff;
+            }
+        }
+    }
+
+    &__thumb {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: rgba($primary_color_01, 0.8);
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: 0.3s;
+        }
+
+        a {
+            position: absolute;
+            top: calc(50% - 20px);
+            left: 50%;
+            z-index: 200;
+            color: #fff;
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            border: 1px dashed #fff;
+            text-align: center;
+            line-height: 50px;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+
+    &__content {
+        padding: 27px 20px 18px;
+        border-bottom: 2px solid $primary_color_01;
+        transition: 0.3s;
+
+
+        @include phone1 {
+            padding: 27px 25px 18px;
+        }
+
+        h3 {
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 600;
+            color: $tertiary_color_01;
+            margin-bottom: 13px;
+        }
+
+        p {
+            color: #768495;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 0px 10px;
+
+            @include phone1 {
+                padding: 0px;
+            }
+        }
+    }
+
+    &__bottom-text {
+
+        p {
+            font-size: 16px;
+            line-height: 26px;
+            color: #768495;
+
+            a {
+                color: $primary_color_01;
+            }
+        }
+    }
+
+
+    // Owl carousel customization
+    .owl-item img {
+        display: inline-block;
+        width: auto;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        height: 60px;
+        width: 60px;
+        background: #fff;
+        color: $heading_color_01;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: -90px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20px;
+        border-radius: 50%;
+        transition: .3s;
+
+        &:hover {
+            background: $primary_color_01;
+            color: #fff;
+        }
+
+        @include desktop2 {
+            display: none;
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        left: auto;
+        right: -90px;
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Feature 01
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.feature1 {
+    background: #FFCDD0;
+
+    &__bg-01 {
+        background: #FDB4B7;
+    }
+
+    &__bg-02 {
+        background: #FFCDD0;
+    }
+
+    @include laptop1 {
+        background: #fff;
+    }
+
+    &__item {
+        padding: 30px 0px 35px;
+
+        h4 {
+            margin: 10px 0px 0px;
+            font-size: 24px;
+            line-height: 1;
+        }
+    }
+    
+
+    &__thumb {
+
+        i {
+            line-height: 1;
+
+            &::before {
+                font-size: 40px;
+                color: $primary_color_01;
+            }
+        }
+    }
+
+
+    // Owl carousel customization
+    .owl-item img {
+        display: inline-block;
+        width: auto;
+    }
+
+    .owl-carousel .owl-nav button.owl-prev,
+    .owl-carousel .owl-nav button.owl-next {
+        height: 60px;
+        width: 60px;
+        background: #fff;
+        color: $heading_color_01;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: -90px;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20px;
+        border-radius: 50%;
+        transition: .3s;
+
+        &:hover {
+            background: $primary_color_01;
+            color: #fff;
+        }
+
+        @include desktop2 {
+            display: none;
+        }
+    }
+
+    .owl-carousel .owl-nav button.owl-next {
+        left: auto;
+        right: -90px;
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Service Details
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.service_details1 {
+
+    &__wrapper {
+
+        @include desktop3 {
+            margin-bottom: 60px;
+        }
+
+        .profile1__appointment {
+            border-bottom: 1px solid #F1F1F1;
+            padding-bottom: 25px;
+        }
+    }
+
+    &__content {
+        border-bottom: 1px solid #F1F1F1;
+        padding-bottom: 15px;
+
+        p {
+            line-height: 30px;
+        }
+    }
+
+    &__title {
+
+        h2 {
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: bold;
+
+            @include phone2 {
+                font-size: 28px;
+                line-height: 40px;
+            }
+
+            span {
+                color: $primary_color_01;
+            }
+        }
+    }
+
+    &__items {
+        padding-top: 30px;
+    }
+}

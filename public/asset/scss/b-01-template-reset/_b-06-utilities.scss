@@ -1,0 +1,422 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Utilities
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+.auto_container {
+    position: static;
+    max-width: 1210px;
+    padding: 0px 20px;
+    margin: 0px auto;
+}
+
+.content_box_pob_120_90 {
+    padding-bottom: 90px;
+
+    @include desktop3 {
+        padding-bottom: 70px;
+    }
+
+    @include tab1 {
+        padding-bottom: 50px;
+    }
+}
+
+.content_box_pob_120_70 {
+    padding-bottom: 70px;
+
+    @include desktop3 {
+        padding-bottom: 50px;
+    }
+
+    @include tab1 {
+        padding-bottom: 30px;
+    }
+}
+
+.content_box_pob_100_70 {
+    padding-bottom: 70px;
+
+    @include desktop3 {
+        padding-bottom: 50px;
+    }
+}
+
+.content_box_pob_100_50 {
+    padding-bottom: 50px;
+
+    @include desktop3 {
+        padding-bottom: 30px;
+    }
+}
+
+.content_box_pot_120 {
+    padding-top: 120px;
+
+    @include desktop3 {
+        padding-top: 100px;
+    }
+
+    @include tab1 {
+        padding-top: 80px;
+    }
+}
+
+.content_box_pob_120 {
+    padding-bottom: 120px;
+
+    @include desktop3 {
+        padding-bottom: 100px;
+    }
+
+    @include tab1 {
+        padding-bottom: 80px;
+    }
+}
+
+.content_box_pot_100 {
+    padding-top: 100px;
+
+    @include tab1 {
+        padding-top: 80px;
+    }
+}
+
+.content_box_pob_100 {
+    padding-bottom: 100px;
+
+    @include tab1 {
+        padding-bottom: 80px;
+    }
+}
+
+.content_box_120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+    @include desktop3 {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    @include tab1 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.content_box_120_90 {
+    padding-top: 120px;
+    padding-bottom: 90px;
+
+    @include desktop3 {
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
+
+    @include tab1 {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+}
+
+.content_box_120_70 {
+    padding-top: 120px;
+    padding-bottom: 70px;
+
+    @include desktop3 {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    @include tab1 {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+}
+
+.content_box_100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    @include desktop3 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.content_box_100_70 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+
+    @include desktop3 {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+}
+
+.content_box_100_50 {
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+    @include desktop3 {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+}
+
+.fluid_content_box {
+    margin-left: 4%;
+    margin-right: 4%;
+
+    @include desktop2 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+.clear {
+    clear: both;
+}
+
+.mt_laptop1_50 {
+    @include laptop1 {
+        margin-top: 50px;
+    }
+}
+
+.mt_tab1_50 {
+    @include tab1 {
+        margin-top: 50px;
+    }
+}
+
+.gray_bg {
+    background-color: #f7f7f7;
+}
+
+.oily_col5 {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+
+    @include desktop3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    @include laptop1 {
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+        max-width: 33%;
+    }
+
+    @include tab1 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    @include phone2_middle {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+
+// ::-webkit-input-placeholder {
+//     /* Edge */
+//     color: red;
+// }
+
+// :-ms-input-placeholder {
+//     /* Internet Explorer 10-11 */
+//     color: red;
+// }
+
+// ::placeholder {
+//     color: red;
+// }
+
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Important Classes
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.img_100 {
+    width: 100%;
+    height: auto;
+}
+
+.f_left {
+    float: left !important;
+}
+
+.f_right {
+    float: right !important;
+}
+
+.fix {
+    overflow: hidden !important;
+}
+
+.white_bg {
+    background-color: #fff;
+}
+
+.white {
+    color: #fff;
+}
+
+.vh_100 {
+    height: 100vh;
+}
+
+.p18 {
+    font-size: 18px;
+    font-family: $font-primary;
+    color: $font_color_01;
+
+    @include tab1 {
+        font-size: 16px;
+    }
+}
+
+.p17 {
+    font-size: 17px;
+    font-family: $font-primary;
+    color: $font_color_01;
+
+    @include tab1 {
+        font-size: 16px;
+    }
+}
+
+.p16 {
+    font-size: 16px;
+    font-family: $font-primary;
+    color: $font_color_01;
+
+    @include tab1 {
+        font-size: 15px;
+    }
+}
+
+.p15 {
+    font-size: 15px;
+    font-family: $font-primary;
+    color: $font_color_01;
+
+    @include tab1 {
+        font-size: 14px;
+    }
+}
+
+.p14 {
+    font-size: 14px;
+    font-family: $font-primary;
+    color: $font_color_01;
+}
+
+.p13 {
+    font-size: 13px;
+    font-family: $font-primary;
+    color: $font_color_01;
+}
+
+.h1 {
+    font-size: 40px;
+    color: $heading_color_01;
+    font-family: $font-display;
+    @include heading_font_weight;
+
+    @include laptop1 {
+        font-size: 35px;
+    }
+
+    @include phone1 {
+        font-size: 30px;
+    }
+}
+
+.h2 {
+    font-size: 32px;
+    color: $heading_color_01;
+    font-family: $font-display;
+    @include heading_font_weight;
+
+    @include laptop1 {
+        font-size: 28px;
+    }
+
+    @include phone1 {
+        font-size: 26px;
+    }
+}
+
+.h3 {
+    font-size: 28px;
+    color: $heading_color_01;
+    font-family: $font-display;
+    @include heading_font_weight;
+
+    @include laptop1 {
+        font-size: 25px;
+    }
+
+    @include phone1 {
+        font-size: 22px;
+    }
+}
+
+.h4 {
+    font-size: 24px;
+    color: $heading_color_01;
+    font-family: $font-display;
+    @include heading_font_weight;
+
+    @include laptop1 {
+        font-size: 22px;
+    }
+
+    @include phone1 {
+        font-size: 20px;
+    }
+}
+
+.h5 {
+    font-size: 20px;
+    color: $heading_color_01;
+    font-family: $font-display;
+    @include heading_font_weight;
+
+    @include laptop1 {
+        font-size: 18px;
+    }
+
+    @include phone1 {
+        font-size: 16px;
+    }
+}
+
+.h6 {
+    font-size: 16px;
+    color: $heading_color_01;
+    font-family: $font-display;
+    @include heading_font_weight;
+
+    @include laptop1 {
+        font-size: 15px;
+    }
+}

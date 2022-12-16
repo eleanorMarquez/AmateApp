@@ -1,0 +1,85 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 01. Nice Select
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+.nice-select {
+    width: 100%;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+}
+
+.nice-select.open,
+.nice-select:active,
+.nice-select:focus {
+    border-color: $primary_color_01;
+}
+
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 02. Slider Range
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+#amount_shop {
+    border: 0px;
+    color: $heading_color_01;
+    font-weight: bold;
+}
+
+// <div id="slider-range"></div>
+// <p>
+//     <label for="amount_shop">Price range:</label>
+//     <input type="text" id="amount_shop" readonly>
+// </p>
+
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 04. Google Map
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+// <div id="map"></div>
+// #map {
+//     height: 650px;
+//     width: 100%;
+//     @include laptop1 {
+//         height: 550px;
+//     }
+//     @include tab1 {
+//         height: 400px;
+//     }
+// }
+
+.mapouter {
+    position: relative;
+    width: 100%;
+    height: 700px;
+
+    @include laptop1 {
+        height: 500px;
+    }
+
+    @include phone1 {
+        height: 400px;
+    }
+
+    .gmap_canvas {
+        overflow: hidden;
+        background: none !important;
+        height: 100%;
+        width: 100%;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: 0px;
+            overflow: hidden;
+            margin: 0px;
+        }
+    }
+}

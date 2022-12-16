@@ -1,0 +1,144 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Icons
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+@font-face {
+    font-family: "flaticon";
+    src: url("../webfonts/flaticon/flaticon.ttf?3a6b767a5ff1e681ab2759ed98631085") format("truetype"),
+        url("../webfonts/flaticon/flaticon.woff?3a6b767a5ff1e681ab2759ed98631085") format("woff"),
+        url("../webfonts/flaticon/flaticon.woff2?3a6b767a5ff1e681ab2759ed98631085") format("woff2"),
+        url("../webfonts/flaticon/flaticon.eot?3a6b767a5ff1e681ab2759ed98631085#iefix") format("embedded-opentype"),
+        url("../webfonts/flaticon/flaticon.svg?3a6b767a5ff1e681ab2759ed98631085#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    font-size: 20px;
+    text-transform: none;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-address:before {
+    content: "\f101";
+}
+
+.flaticon-ambulance-1:before {
+    content: "\f102";
+}
+
+.flaticon-ambulance:before {
+    content: "\f103";
+}
+
+.flaticon-arrow-pointing-to-right:before {
+    content: "\f104";
+}
+
+.flaticon-bacteria:before {
+    content: "\f105";
+}
+
+.flaticon-calendar:before {
+    content: "\f106";
+}
+
+.flaticon-chair:before {
+    content: "\f107";
+}
+
+.flaticon-clocks:before {
+    content: "\f108";
+}
+
+.flaticon-coworking:before {
+    content: "\f109";
+}
+
+.flaticon-customer-service:before {
+    content: "\f10a";
+}
+
+.flaticon-doctor-1:before {
+    content: "\f10b";
+}
+
+.flaticon-doctor-2:before {
+    content: "\f10c";
+}
+
+.flaticon-doctor:before {
+    content: "\f10d";
+}
+
+.flaticon-drugs:before {
+    content: "\f10e";
+}
+
+.flaticon-electrotherapy:before {
+    content: "\f10f";
+}
+
+.flaticon-family:before {
+    content: "\f110";
+}
+
+.flaticon-health:before {
+    content: "\f111";
+}
+
+.flaticon-hospital-bed:before {
+    content: "\f112";
+}
+
+.flaticon-landline:before {
+    content: "\f113";
+}
+
+.flaticon-medical-file:before {
+    content: "\f114";
+}
+
+.flaticon-medical-report:before {
+    content: "\f115";
+}
+
+.flaticon-money:before {
+    content: "\f116";
+}
+
+.flaticon-next-1:before {
+    content: "\f117";
+}
+
+.flaticon-next:before {
+    content: "\f118";
+}
+
+.flaticon-office-building:before {
+    content: "\f119";
+}
+
+.flaticon-patient:before {
+    content: "\f11a";
+}
+
+.flaticon-space-colony:before {
+    content: "\f11b";
+}
+
+.flaticon-team-1:before {
+    content: "\f11c";
+}
+
+.flaticon-team:before {
+    content: "\f11d";
+}

@@ -1,0 +1,68 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 16. Team
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 16. Team
+===================================================*/
+
+.team1 {
+    background: url(../img/png-img/png-img-08.png);
+    @include bg_fixed;
+
+    &__item {
+        box-shadow: 0px 5px 20px 0px rgba(230, 230, 230, 0.6);
+
+        &:hover .team1__btn {
+            top: 0px;
+        }
+    }
+
+    &__content {
+        padding: 23px 0px 30px;
+        border-bottom: 3px solid $primary_color_01;
+        position: relative;
+        overflow: hidden;
+
+        h4 {
+            font-size: 18px;
+            line-height: 20px;
+            color: $heading_color_02;
+            font-weight: bold;
+            border-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        background: $primary_color_01;
+        height: 100%;
+        top: 110px;
+        left: 0px;
+        transition: 0.4s;
+
+        a {
+            display: inline-block;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            color: $primary_color_01;
+            background: #FFEDF0;
+            padding: 12px 30px;
+            border-radius: 100px;
+            margin-top: 30px;
+        }
+    }
+
+    &.other_page {
+        background: #fff;
+    }
+}

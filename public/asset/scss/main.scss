@@ -1,0 +1,126 @@
+/***************************************************
+================ Master Stylesheet =================
+====================================================
+Template Name: HounLare
+Template URL: https://oilytheme.net/demo-html/2021/003/preview/index.html
+Description: HounLare is a stunning, professional, and flexible Health, Medical, Hospital, And Clinic multi-purpose HTML5 Template.
+Author: OilyTheme
+Author URL: https://themeforest.net/user/oilytheme
+Version: 1.0
+****************************************************/
+
+
+/***************************************************
+=================== CSS INDEX ======================
+====================================================
+01. Google Font
+02. Reset CSS
+03. Animations
+04. Preloader
+05. Scroll To Top
+06. Input
+07. Button
+08. Title Style
+09. Header
+10. Footer
+11. Slider and Hero
+12. Service and Feature
+13. Project and Portfolio
+14. Blog or News
+15. Testimonial
+16. Team
+17. About
+18. Sidebar and Page title
+19. Other Sections (Author CSS End)
+20. Helper classes
+****************************************************/
+
+
+////////////////////////////////////////////////////
+// Template Reset
+@import "b-01-template-reset/b-01-functions";
+@import "b-01-template-reset/b-02-variables";
+@import "b-01-template-reset/b-03-mixins";
+@import "b-01-template-reset/b-04-typography";
+@import "b-01-template-reset/b-05-base";
+@import "b-01-template-reset/b-06-utilities";
+@import "b-01-template-reset/b-07-plugins-css";
+@import "b-01-template-reset/b-08-meanmenu";
+@import "b-01-template-reset/b-09-animations";
+@import "b-01-template-reset/b-10-preloader";
+@import "b-01-template-reset/b-11-scrollToTop";
+
+
+////////////////////////////////////////////////////
+// Template Body
+@import "b-02-template-body/b-01-input";
+@import "b-02-template-body/b-02-button";
+@import "b-02-template-body/b-03-icon";
+@import "b-02-template-body/b-04-title-style";
+@import "b-02-template-body/b-05-header";
+@import "b-02-template-body/b-06-footer";
+@import "b-02-template-body/b-07-slider_hero";
+@import "b-02-template-body/b-08-service_feature";
+@import "b-02-template-body/b-09-project_portfolio";
+@import "b-02-template-body/b-10-blog";
+@import "b-02-template-body/b-11-testimonial";
+@import "b-02-template-body/b-12-team";
+@import "b-02-template-body/b-13-about";
+@import "b-02-template-body/b-14-sidebar_pagetitle";
+@import "b-02-template-body/b-15-other-section";
+@import "page-01";
+@import "page-02";
+@import "b-02-template-body/b-16-helper-classes";
+
+
+/*==================================================
+===| Style CSS End
+===================================================*/
+
+
+////////////////////////////////////////////////////
+// order-2 order-lg-0
+// d-table h-100(vh-100) w-100
+// d-table-cell align-middle text-center
+// d-flex align-items-center justify-content-center
+// https://via.placeholder.com/100x120
+// width: calc(100% - 30px);
+// <br class="d-none d-md-inline-block">
+// background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/hero/full-bg-01.jpg);
+
+// Ruby
+// sass --watch assets\scss\main.scss:assets\css\style.css
+
+// Node
+// npm run compile:sass
+
+// <a href="#"><i class="fab fa-facebook-f"></i></a>
+// <a href="#"><i class="fab fa-twitter"></i></a>
+// <a href="#"><i class="fab fa-linkedin-in"></i></a>
+// <a href="#"><i class="fab fa-instagram"></i></a>
+
+// <a href="#"><i class="far fa-user"></i></a>
+// <a href="#"><i class="far fa-calendar-alt"></i></a>
+// <a href="#"><i class="far fa-clock"></i></a>
+// <a href="#"><i class="fab fa-pinterest"></i></a>
+// <a href="#"><i class="fab fa-youtube"></i></a>
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+// /*==================================================
+// ===| 
+// ===================================================*/
+
+// <section>
+//   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+// </section>
+
+// <!-- |==========================================| -->
+// <!-- |=====||  Start ||===============| -->
+// <!-- |=====||  End ||=================| -->
+// <!-- |==========================================| -->

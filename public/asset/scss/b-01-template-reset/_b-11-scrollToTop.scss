@@ -1,0 +1,57 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 05. Scroll To Top
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 05. Scroll To Top
+===================================================*/
+
+.scrollToTop {
+    position: fixed;
+    display: none;
+    bottom: 50px;
+    right: 35px;
+    z-index: 100000;
+    color: #fff;
+    background: $primary_color_01;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    line-height: 55px;
+    transition: 1s ease;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.14), 0 2px 8px 0 rgba(0, 0, 0, 0.10);
+
+    @include desktop3 {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    &::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        top: 100%;
+        left: 5%;
+        height: 10px;
+        width: 90%;
+        opacity: 1;
+        background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0) 80%);
+    }
+
+    &:hover {
+        color: #fff;
+        background: #222;
+    }
+
+    @include tab1 {
+        bottom: 20px;
+        right: 20px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+    }
+}

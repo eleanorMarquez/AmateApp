@@ -1,0 +1,239 @@
+////////////////////////////////////////////////////
+// desktop1 == 1800px+
+@mixin desktop1() {
+    @media only screen and (min-width: 1800px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// desktop1 == 1599px-
+@mixin desktop1_middle() {
+    @media only screen and (max-width: 1599px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// desktop2 == 1399px-
+@mixin desktop2() {
+    @media only screen and (max-width: 1399px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// desktop3 == 1199px-
+@mixin desktop3() {
+    @media only screen and (max-width: 1199px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// desktop4 == 1023px-
+@mixin desktop4() {
+    @media only screen and (max-width: 1023px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// desktop3_4 == 1199px - 992px
+@mixin desktop3_4() {
+    @media only screen and (max-width: 1199px) and (min-width: 992px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// desktop1_4 == 992px+
+@mixin desktop1_4() {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// laptop1 == 991px-
+@mixin laptop1() {
+    @media only screen and (max-width: 991px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// laptop2 == 880px-
+@mixin laptop2() {
+    @media only screen and (max-width: 880px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// laptop1_2 == 991px - 880px
+@mixin laptop1_2() {
+    @media only screen and (max-width: 991px) and (min-width: 768px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// tab1 == 767px-
+@mixin tab1() {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// tab2 == 640px-
+@mixin tab2() {
+    @media only screen and (max-width: 640px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// phone1 == 575px-
+@mixin phone1() {
+    @media only screen and (max-width: 575px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// phone2 == 479px-
+@mixin phone2() {
+    @media only screen and (max-width: 479px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// phone2 == 400px-
+@mixin phone2_middle() {
+    @media only screen and (max-width: 400px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// phone3 == 319px-
+@mixin phone3() {
+    @media only screen and (max-width: 319px) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// clearfix Mixin
+@mixin clearfix() {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+////////////////////////////////////////////////////
+// absolute-center Mixin
+@mixin absolute_center() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+////////////////////////////////////////////////////
+// bg_parallax Mixin
+@mixin bg_parallax() {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+////////////////////////////////////////////////////
+// bg_fixed Mixin
+@mixin bg_fixed {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+////////////////////////////////////////////////////
+// overlay_parent
+@mixin overlay_parent {
+    position: relative;
+    z-index: 1;
+}
+
+////////////////////////////////////////////////////
+// overlay
+@mixin overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+////////////////////////////////////////////////////
+// middle
+@mixin middle {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+////////////////////////////////////////////////////
+// font-awesome
+@mixin font_awesome {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+////////////////////////////////////////////////////
+// not_first_child
+@mixin not_first_child() {
+    &:not(:first-child) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// not_last_child
+@mixin not_last_child() {
+    &:not(:last-child) {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// first_child
+@mixin first_child() {
+    &:first-child {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// last_child
+@mixin last_child() {
+    &:last-child {
+        @content;
+    }
+}
+
+////////////////////////////////////////////////////
+// last_child
+@mixin input_placeholder() {
+    &::placeholder {
+        @content;
+    }
+}

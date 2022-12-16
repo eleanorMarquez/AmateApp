@@ -1,0 +1,84 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 08. Title Style
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 08. Title Style
+===================================================*/
+
+.title1 {
+
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        color: $primary_color_01;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+
+        @include tab1 {
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+
+        span {
+            color: $heading_color_01;
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+        color: $heading_color_01;
+        font-weight: bold;
+
+        @include tab1 {
+            font-size: 32px;
+            line-height: 42px;
+        }
+
+        span {
+            color: $primary_color_01;
+        }
+    }
+}
+
+// Title Center
+
+.title2 {
+
+    h4 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+        color: $primary_color_01;
+        text-transform: capitalize;
+        margin-bottom: 27px;
+        letter-spacing: 0.25px;
+
+        @include tab1 {
+            font-size: 16px;
+            margin-bottom: 18px;
+        }
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+        color: $heading_color_01;
+        font-weight: bold;
+        margin-bottom: 24px;
+
+        @include tab1 {
+            font-size: 32px;
+            line-height: 42px;
+        }
+
+        span {
+            color: $primary_color_01;
+        }
+    }
+}
+

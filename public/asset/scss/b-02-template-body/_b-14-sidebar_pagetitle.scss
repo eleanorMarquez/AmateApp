@@ -1,0 +1,540 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 18. Sidebar and Page title
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 18. Sidebar and Page title
+===================================================*/
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Page Title 
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.page_title {
+
+    &__img-01 {
+        background: url(../img/background/bg-17.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-02 {
+        background: url(../img/background/bg-18.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-03 {
+        background: url(../img/background/bg-19.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-04 {
+        background: url(../img/background/bg-20.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-05 {
+        background: url(../img/background/bg-21.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-06 {
+        background: url(../img/background/bg-22.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-07 {
+        background: url(../img/background/bg-24.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-08 {
+        background: url(../img/background/bg-25.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-09 {
+        background: url(../img/background/bg-26.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-10 {
+        background: url(../img/background/bg-27.jpg);
+        @include bg_fixed;
+    }
+
+    &__img-11 {
+        background: url(../img/background/bg-28.jpg);
+        @include bg_fixed;
+    }
+
+    &__padding {
+        padding: 175px 0px;
+
+        @include tab1 {
+            padding: 120px 0px;
+        }
+
+        @include phone2_middle {
+            padding: 100px 0px;
+        }
+    }
+
+    &__content {
+
+        h1 {
+            font-size: 36px;
+            line-height: 46px;
+            font-weight: bold;
+            color: $heading_color_01;
+            margin-bottom: 17px;
+        }
+    }
+
+    &__bread-crumb {
+
+        ul {
+
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 2px;
+                    background: $heading_color_02;
+                    right: -18px;
+                    top: 14px;
+                }
+
+                a {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $heading_color_01;
+                    color: $heading_color_02;
+                }
+
+                @include last_child {
+                    margin-right: 0px;
+
+                    &::before {
+                        display: none;
+                    }
+
+                    a {
+                        color: $primary_color_01;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Sidebar
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.sidebar1 {
+
+    &__info {
+
+        &--content {
+            background: $primary_color_01;
+            padding: 28px 20px 30px;
+
+            h3 {
+                margin-bottom: 0px;
+
+                a {
+                    color: #fff;
+                    display: inline-block;
+                    font-size: 24px;
+                    line-height: 34px;
+                    font-weight: bold;
+
+                    @include phone2_middle {
+                        font-size: 20px;
+                        line-height: 30px;
+                    }
+                }
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                color: #fff;
+                font-weight: 600;
+
+                @include phone2_middle {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+
+    &__social {
+        box-shadow: 0px 8px 20px 0px rgba(236, 236, 236, 0.55);
+        padding: 24px 0px;
+
+        ul {
+
+            li {
+                display: inline-block;
+
+                a {
+                    display: inline-block;
+                    font-size: 21px;
+                    line-height: 1;
+                    margin: 0px 12px;
+
+                    &.social-01 {
+                        color: #3b5998;
+                    }
+
+                    &.social-02 {
+                        color: #1da1f2;
+                    }
+
+                    &.social-03 {
+                        color: #0e76a8;
+                    }
+
+                    &.social-04 {
+                        color: #c8232c;
+                    }
+                }
+            }
+        }
+    }
+
+    &__qualification {
+        box-shadow: 0px 8px 20px 0px rgba(236, 236, 236, 0.55);
+        background: #fff;
+
+        &--title {
+            background: #F2F2F2;
+            padding: 22px 30px 18px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+            }
+        }
+
+        &--content {
+            background: #fff;
+            padding: 22px 30px;
+
+            p {
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 600;
+                color: #565656;
+            }
+        }
+    }
+
+    &__category {
+        background: #fff;
+
+        &--bg-01 {
+            background: #F2F2F2;
+        }
+
+        &--bg-02 {
+            background: #FFF4F5;
+        }
+
+        &--item {
+            padding: 22px 10px 15px;
+
+
+            h6 {
+
+                a {
+                    display: inline-block;
+                    color: #292929;
+                    font-size: 16px;
+                    line-height: 18px;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: $primary_color_01;
+                    }
+                }
+            }
+
+            &:hover {
+
+                .sidebar1__category--thumb {
+                    background: $primary_color_01;
+                    border-color: $primary_color_01;
+
+                    i {
+
+                        &::before {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+
+        &--title {
+            background: $primary_color_01;
+            padding: 22px 30px 18px;
+
+            h3 {
+                font-size: 24px;
+                line-height: 30px;
+                font-weight: 600;
+                color: #fff;
+            }
+        }
+
+        &--content {
+
+            ul {
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 10px;
+                    background: $primary_color_01;
+                    left: 0px;
+                    bottom: -362px;
+                    z-index: -5;
+                }
+
+                li {
+                    width: 50%;
+                    float: left;
+                }
+            }
+        }
+
+        &--thumb-box {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background: #fff;
+            display: inline-block;
+            margin: 0px auto 15px;
+            padding: 21px;
+        }
+
+        &--thumb {
+            width: 58px;
+            height: 58px;
+            line-height: 74px;
+            border: 1px solid #bababa;
+            border-radius: 100%;
+            background: #fff;
+            transition: 0.3s;
+
+            i {
+
+                &::before {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Sidebar
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+.sidebar2 {
+
+    // Recent Post
+    &__recent-post {
+        border-bottom: 3px solid $primary_color_01;
+        background: #F1F1F1;
+    }
+
+    &__title {
+        background: $primary_color_01;
+        padding: 22px 20px 13px 27px;
+
+        h3 {
+            color: #fff;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 600;
+
+            @include phone1 {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__post_item {
+        min-height: 80px;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        position: relative;
+
+        &--thumb {
+            width: 80px;
+            height: auto;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            border-radius: 3px;
+            overflow: hidden;
+
+            @include phone2_middle {
+                width: 60px;
+            }
+        }
+
+        &--content {
+            padding-left: 100px;
+            padding-right: 40px;
+
+            @include desktop3 {
+                padding-right: 0px;
+            }
+
+            @include phone2_middle {
+                padding-left: 80px;
+            }
+
+            h4 {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 600;
+                margin-bottom: 4px;
+                margin-top: 3px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 500;
+                color: $heading_color_01;
+            }
+        }
+    }
+
+    // Search
+    &__search {
+        box-shadow: 0px 8px 20px 0px rgba(236, 236, 236, 0.55);
+        padding: 25px 30px;
+        position: relative;
+
+        input {
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            color: #888;
+            padding-right: 50px;
+
+            &::placeholder {
+                color: red;
+                font-size: 24px;
+                color: #949494;
+                line-height: 30px;
+                font-weight: 600;
+
+                @include phone2_middle {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        button {
+            border: none;
+            background: none;
+            position: absolute;
+            right: 30px;
+            top: 22px;
+
+            i {
+                color: #949494;
+                font-size: 24px;
+                line-height: 30px;
+
+                @include phone2_middle {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    // Tags
+    &__tags {
+        border-bottom: 3px solid $primary_color_01;
+        background: #F1F1F1;
+
+        &--content {
+            padding: 30px 30px 20px;
+
+            a {
+                display: inline-block;
+                background: #fff;
+                color: $heading_color_01;
+                padding: 7px 12px;
+                font-weight: 600;
+                font-size: 16px;
+                margin-right: 5px;
+                margin-bottom: 10px;
+                border-radius: 3px;
+
+                &:hover {
+                    background: $primary_color_01;
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    // Questions
+    &__questions {
+        border-bottom: 3px solid $primary_color_01;
+        background: #F1F1F1;
+
+        &--thumb {
+            position: relative;
+
+
+        }
+
+        &--btn {
+            position: absolute;
+            @include middle;
+
+            a {
+                display: inline-block;
+                background: rgba(255,255,255,0.7);
+                border-radius: 3px;
+                padding: 14px 35px;
+                color: $primary_color_01;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 600;
+                width: 162px;
+            }
+        }
+    }
+}

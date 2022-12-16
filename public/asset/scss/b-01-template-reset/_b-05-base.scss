@@ -1,0 +1,99 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Reset CSS
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+a,
+// a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: .3s;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: none;
+    color: $primary_color_01;
+    border: none;
+    transition: .3s;
+}
+
+label {
+    color: $black_soft_01;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    outline: 0 solid;
+}
+
+body {
+    font-family: $font-primary;
+    color: $font_color_01;
+    @include site_font_size;
+}
+
+p {
+    font-family: $font-primary;
+    font-weight: normal;
+    color: $font_color_01;
+    @include site_font_size;
+    line-height: 1.9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-display;
+    color: $heading_color_01;
+    @include heading_font_weight;
+}
+
+button {
+    cursor: pointer;
+
+    &.button {
+        background: transparent;
+        border: 0px;
+        transition: .3s;
+    }
+}
+
+
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| Selection & Color
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+
+// *::-moz-selection {
+//     background: #313131;
+//     color: #fff;
+//     text-shadow: none;
+// }
+
+// ::-moz-selection {
+//     background: #313131;
+//     color: #fff;
+//     text-shadow: none;
+// }
+
+::selection {
+    background: #313131;
+    color: #fff;
+    text-shadow: none;
+}

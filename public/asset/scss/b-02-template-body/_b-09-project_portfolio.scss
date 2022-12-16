@@ -1,0 +1,140 @@
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+//==| 13. Project and Portfolio
+//////////////////////////////////////////////////==|
+//////////////////////////////////////////////////==|
+/*==================================================
+===| 13. Project and Portfolio
+===================================================*/
+
+.profile1 {
+    background: url(../img/png-img/png-img-34.png);
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    @include desktop1_middle {
+        background: #fff;
+    }
+
+    &__Wrapper {
+        padding-left: 20px;
+
+        @include desktop3 {
+            padding-left: 0px;
+        }
+
+        @include laptop1 {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__title {
+
+        h2 {
+            font-size: 36px;
+            line-height: 50px;
+            font-weight: bold;
+            margin-bottom: 12px;
+
+            @include phone2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+
+        h6 {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: bold;
+        }
+    }
+
+    &__content {
+        border-bottom: 1px solid #F1F1F1;
+        padding-bottom: 15px;
+    }
+
+    &__item {
+        background: #F2F2F2;
+        position: relative;
+
+        &--thumb {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            background: #fff;
+            text-align: center;
+            line-height: 76px;
+            position: absolute;
+            left: 30px;
+            top: 25px;
+            transition: 0.3s;
+
+            @include phone2_middle {
+                left: 20px;
+                top: 20px;
+            }
+
+            i {
+
+                &::before {
+                    color: $heading_color_01;
+                    font-size: 30px;
+                }
+            }
+        }
+
+        &--content {
+            padding: 20px 50px 8px 110px;
+
+            @include desktop3 {
+                padding: 20px 20px 8px 110px;
+            }
+
+            @include phone2_middle {
+                padding: 100px 20px 8px 20px;
+            }
+
+            h4 {
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: bold;
+            }
+
+            p {
+                line-height: 28px;
+            }
+        }
+
+        &:hover {
+
+            .profile1__item--thumb {
+                background: $primary_color_01;
+                box-shadow: 0px 10px 35px 0px rgba(225, 36, 84, 0.53);
+
+                i {
+
+                    &::before {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &__appointment {
+
+        &>h2 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 50px;
+
+            @include phone2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+    }
+}
